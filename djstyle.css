@@ -1,0 +1,385 @@
+/** {
+  border:3px dashed white;
+}*/
+
+/*@import url('https://fonts.googleapis.com/css?family=Roboto|Russo+One');*/
+
+body {
+  margin: 0;
+  background-color: #3231ab;
+  font-family: "Verdana";
+  color: #ffffff;
+}
+
+header {
+  background-color:#729a30;
+  padding: 20px 20px 5px 20px;
+  font-family: 'Russo One', Helvetica;
+  color: #1a1a1a;
+  grid-area:header;
+}
+
+header h1 {
+  margin-top: 60px;
+  padding: 0;
+  float: right;
+  font-size: 30px;
+}
+
+@media (max-width: 1160px) {
+  header h1 {
+    float: none;
+    margin-top: 0px;
+  }
+}
+
+#header_contact_container {
+  background-color: #729a30;
+
+}
+
+.phoneicon {
+  height: 50px;
+  vertical-align: middle;
+}
+
+#social_icons_container {
+  margin-left: 220px;
+  vertical-align: middle;
+
+}
+
+@media (max-width: 650px) {
+  #social_icons_container {
+    margin-left: 100px;
+    display: inline-block;
+  }
+}
+
+.socialicons {
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+h2 {
+  vertical-align: middle;
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+
+nav {
+  background: linear-gradient(to top, black, #1B1B1B);
+  border-top: #3231ab 3px solid;
+  border-bottom: #3231ab 3px solid;
+  overflow: hidden;
+  grid-area:nav;
+}
+
+nav a {
+  color: white;
+  padding: 10px 16px 10px 16px;
+  text-decoration: none;
+  font-size: 19px;
+  margin: 0;
+  font-family: Impact, sans-serif;
+  display: inline-block;
+}
+
+.drop_down {
+  display: inline-block;
+}
+
+.drop_down_content {
+  display: none;
+  position: absolute;
+  border: 3px solid #3231ab;
+  background-color: #101010;
+  min-width: 150px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.drop_down:hover .drop_down_content {
+  display: block;
+}
+
+.drop_down_content a {
+  color: white;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+nav li {
+  float: left;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+nav ul {
+  margin: auto;
+  padding: 0;
+  text-align: center;
+  
+}
+main {
+  grid-area:main;
+}
+
+
+
+footer {
+  grid-area:footer;
+  text-align: center;
+  padding: 8px 0 8px 0;
+  margin: 0;
+  line-height: 1.35;
+  font-size: 14px;
+  font-family: Arial, helvetica;
+}
+
+#footer_links a {
+  color: rgb(212, 222, 86);
+  text-decoration: none;
+  margin: 40px 10px 5px 10px;
+  display: inline-block;
+}
+
+#footer_links a:hover {
+  color: #dddddd
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #dddddd;
+}
+
+.email {
+  color: rgb(212, 222, 86);
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.email:hover {
+  color: #b3b300;
+}
+.headerlogo {
+  width:80%;
+}
+img {
+  max-width:100%;
+}
+.img1 {
+  grid-area:img1;
+  display:grid;
+  
+  
+}
+.img2 {
+  grid-area:img2;
+  display:grid;
+  
+}
+.img3 {
+  grid-area:img3;
+  display:grid;
+  
+}
+#audio1 {
+  grid-area:audio1;
+  margin-top:5em;
+}
+#audio2 {
+  grid-area:audio2;
+  margin-top:5em;
+}
+#video1 {
+  grid-area:video1;
+
+}
+#video2 {
+  grid-area:video2;
+}
+audio {
+  max-width:100%;
+}
+video {
+width:480px;
+max-width:95%;
+min-height:180px;
+}
+
+ video[poster]{
+object-fit:cover;
+}
+#blockabc {
+  grid-area:blockabc;
+}
+#blockd {
+  grid-area:blockd;
+}
+#blocke {
+  grid-area:blocke;
+}
+#blockf {
+  grid-area:blockf;
+}
+
+form {
+  padding; 10px
+  width: 90%;
+  background-color:#729A30;
+  color:black;
+  margin:auto;
+}
+
+
+input {
+  margin: 1px 0 10px 0;
+}
+
+.button {
+  background-color:#D4DE56;
+  padding: 5px;
+  color: #0000b0;
+  margin: 10px 0 0 0;
+}
+
+h1 {
+  text-align:center;
+  padding:5px;
+  color: #ffffff;
+}
+main h1 {
+  border:7px solid white;
+  border-radius:5px;
+  max-width:25%;
+  text-align:center;
+  margin:auto;
+}
+
+h3 {
+  color: #ffffff;
+}
+
+
+
+
+/*---------------------------Mobile Layout----------------------------*/
+.container1 { /*home page*/
+  display: grid;
+  grid-template-columns:1fr;
+  grid-gap:.5em;
+  margin:1%;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer";
+    }
+    
+/*This stuff is for the hamburger menu*/
+.toggleNav {
+    display:grid; /*This is what allows the hamburger icon and "Menu" to display*/
+    text-align:center;
+    font-size:1.5em;
+    font-weight:bold;
+    padding:10px;
+    }
+
+#flex-nav ul {
+    display: none; /*jQuery toggles the nav from to this class to the .open when clicked*/
+    text-align:center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    }
+ 
+#flex-nav ul.open { /*.open is the class that gets toggled when clicked (with help from the jQuery code)*/
+    display:grid;
+    }
+    
+#flex-nav li {
+    padding-left:10px;
+    padding-top:10px;
+    }
+
+
+/*-----------------------Tablet Media Query------------------------*/
+@media only screen and (min-width: 480px)  {
+.container1 { /*home page*/
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "header"
+    "nav"
+    "main"
+    "footer";
+    }
+    
+#block_containers{
+  display:grid;
+  grid-gap:1em;
+  text-align:center;
+  justify-content:center;
+  grid-template-columns:1fr 1fr;
+  grid-template-areas:
+  "blockabc blockabc"
+  "audio1 audio2"
+  "video1 video1"
+  "video2 video2"
+  "img1 img2"
+  "blockd blocke"
+  "img3 img3"
+  "blockf blockf";
+  }
+/* Below will change from hamburger menu to side navigation*/
+  
+.toggleNav {
+    display: none; /*Makes the hamburger icon with the word "Menu" to disappear at this screen size*/
+  }
+  
+#flex-nav ul {
+    display:grid;
+    text-align:left;
+  }
+
+#flex-nav li {
+    padding-left:10px;
+    padding-top:10px;
+  }
+
+}
+
+/*-----------------------Desktop Media Query------------------------*/
+@media only screen and (min-width: 960px)  {
+
+.container1 { /*home page*/
+   display:grid;
+  grid-template-columns:1fr;
+  grid-gap:.5em;
+  margin:1%;
+  grid-template-areas:
+  "header"
+  "nav"
+  "main"
+  "footer";
+  }
+#block_containers{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr;
+  grid-template-areas:
+  "blockabc blockabc blockabc"
+  "audio1 video1 video1"
+  "audio2 video2 video2"
+  "img1 img2 img3"
+  "blockd blocke blockf";
+  }
+}
